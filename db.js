@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
+
 
 // MongoDB connection URI
-const mongoURI = "mongodb+srv://Mithun-750:Mithun%4012@cluster0.apv6krr.mongodb.net/NoteDrop?retryWrites=true&w=majority";
+const mongoURI = process.env.MONGO_URI;
 
 // Function to connect to MongoDB
 const connectToMongo = async () => {

@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 
 // Routes
 app.get('/', (req, res) => {
-    res.send('Hello, World!');
+  res.send('Hello, World!');
 });
 
 // User authentication routes
@@ -26,5 +26,5 @@ app.use('/api/notes', require('./routes/notes'));
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server listening on port http://localhost:${port}`);
+  console.log(`Server listening on port http://localhost:${port}`);
 });
